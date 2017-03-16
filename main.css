@@ -61,6 +61,7 @@ input[type="text"]:focus {
 .thumb-div {
 	background-color: #333;
 	width: 80%;
+	max-width: 80%;
 	max-width: 400px;
 	margin: 10px auto;
 }
@@ -74,12 +75,19 @@ input[type="text"]:focus {
 	margin-top: 10%;
 	height: 80%;
 	width: 80%;
+	transition: border-color 0.5s, filter 1s;
 }
+
 
 .thumb-div,
 .thumb-div img {
-	border: 1px solid #000;
+	border: 1px solid #aaa;
 	border-radius: 8px;
+}
+
+.thumb-div img:hover {
+	border-color: #fff;
+	filter: brightness(1.15);
 }
 
 /* Media Queries */ 
