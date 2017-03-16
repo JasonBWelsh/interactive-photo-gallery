@@ -6,6 +6,7 @@
 		<title>Interactive Photo Gallery</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="js/Magnific-Popup-master/magnific/magnific-popup.css">
 		<link rel="stylesheet" href="main.css">
 	</head>
 
@@ -19,56 +20,85 @@
 		<div class="thumb-wrap">
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/01.jpg" alt="Hey barrels in a field">
+				<a href="img/01.jpg"><img src="img/thumbnails/01.jpg" alt="Hey barrels in a field"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/02.jpg" alt="Mountaisn across a lake">
+				<a href="img/02.jpg"><img src="img/thumbnails/02.jpg" alt="Mountaisn across a lake"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/03.jpg" alt="Green field with trees and hills in the background">
+				<a href="img/03.jpg"><img src="img/thumbnails/03.jpg" alt="Green field with trees and hills in the background"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/04.jpg" alt="Icebergs in the water by a glacier">
+				<a href="img/04.jpg"><img src="img/thumbnails/04.jpg" alt="Icebergs in the water by a glacier"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/05.jpg" alt="Rising bluffs in an arid landscape">
+				<a href="img/05.jpg"><img src="img/thumbnails/05.jpg" alt="Rising bluffs in an arid landscape"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/06.jpg" alt="Rustic wood rail by exotic trees and foliage">
+				<a href="img/06.jpg"><img src="img/thumbnails/06.jpg" alt="Rustic wood rail by exotic trees and foliage"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/07.jpg" alt="Dense jungle covered hills">
+				<a href="img/07.jpg"><img src="img/thumbnails/07.jpg" alt="Dense jungle covered hills"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/08.jpg" alt="Rising sand duns and a blue sky">
+				<a href="img/08.jpg"><img src="img/thumbnails/08.jpg" alt="Rising sand duns and a blue sky"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/09.jpg" alt="Forest enclosed path with flowers">
+				<a href="img/09.jpg"><img src="img/thumbnails/09.jpg" alt="Forest enclosed path with flowers"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/10.jpg" alt="Waves craashing on the beach with high hills">
+				<a href="img/10.jpg"><img src="img/thumbnails/10.jpg" alt="Waves craashing on the beach with high hills"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/11.jpg" alt="Outlook from a cave at a muddy river winding through a forest and plain">
+				<a href="img/11.jpg"><img src="img/thumbnails/11.jpg" alt="Outlook from a cave at a muddy river winding through a forest and plain"></a>
 			</div>
 
 			<div class="thumb-div">
-				<img src="img/thumbnails/12.jpg" alt="Snow capped mountains seen from across a green field with lavender">
+				<a href="img/12.jpg"><img src="img/thumbnails/12.jpg" alt="Snow capped mountains seen from across a green field with lavender"></a>
 			</div>
 
 
 		</div><!--/.thumb-wrap-->
 
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/Magnific-Popup-master/magnific/jquery.magnific-popup.min.js"></script>
+		<script>
+			$('.thumb-wrap').magnificPopup({
+  				delegate: 'a', // child items selector, by clicking on it popup will open
+  				type: 'image',
+  				// other options
+  				gallery: {
+  					enabled: true //creates arrows
+  				},
+
+  				type: 'image',
+  				mainClass: 'mfp-with-zoom', 
+  				zoom: {
+   			 	enabled: true, 
+
+    			duration: 300, 
+    			easing: 'ease-in-out', 
+
+    			opener: function(openerElement) {
+    
+      			return openerElement.is('img') ? openerElement : openerElement.find('img');
+    			}
+  				}
+			});
+
+
+		</script>
+		<script src="js/scripts.js"></script>
 	</body>
 
 

@@ -65,6 +65,10 @@ input[type="text"]:focus {
 	margin: 10px auto;
 }
 
+.thumb-div:hover {
+	background-color: #373737;
+}
+
 .thumb-div img {
 	margin-bottom: 10%;
 	margin-top: 10%;
@@ -100,3 +104,10 @@ input[type="text"]:focus {
 		/*border: none;*/
 	}
 }
+
+
+/***** Magnific CSS *****/
+
+
+
+  
