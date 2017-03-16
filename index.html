@@ -20,52 +20,61 @@
 		<div class="thumb-wrap">
 
 			<div class="thumb-div">
-				<a href="img/01.jpg" data-rel="lightcase"><img src="img/thumbnails/01.jpg" alt="
-Hay Bales"></a>
+				<a href="img/01.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/01.jpg" alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields.
+
+"></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/02.jpg" data-rel="lightcase"><img src="img/thumbnails/02.jpg" alt="Mountaisn across a lake"></a>
+				<a href="img/02.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/02.jpg" alt="The lake was so calm today. We had a great view of the snow on the mountains from here."></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/03.jpg" data-rel="lightcase"><img src="img/thumbnails/03.jpg" alt="Green field with trees and hills in the background"></a>
+				<a href="img/03.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/03.jpg" alt="
+I hiked to the top of the mountain and got this picture of the canyon and trees below."></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/04.jpg" data-rel="lightcase"><img src="img/thumbnails/04.jpg" alt="Icebergs in the water by a glacier"></a>
+				<a href="img/04.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/04.jpg" alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today. "></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/05.jpg" data-rel="lightcase"><img src="img/thumbnails/05.jpg" alt="Rising bluffs in an arid landscape"></a>
+				<a href="img/05.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/05.jpg" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/06.jpg" data-rel="lightcase"><img src="img/thumbnails/06.jpg" alt="Rustic wood rail by exotic trees and foliage"></a>
+				<a href="img/06.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/06.jpg" alt="
+Fall is coming, I love when the leaves on the trees start to change color.
+
+"></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/07.jpg" data-rel="lightcase"><img src="img/thumbnails/07.jpg" alt="Dense jungle covered hills"></a>
+				<a href="img/07.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/07.jpg" alt="Plantation
+I drove past this plantation yesterday, everything is so green!"></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/08.jpg" data-rel="lightcase"><img src="img/thumbnails/08.jpg" alt="Rising sand duns and a blue sky"></a>
+				<a href="img/08.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/08.jpg" alt="My summer vacation to the Oregon Coast. I love the sandy dunes!"></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/09.jpg" data-rel="lightcase"><img src="img/thumbnails/09.jpg" alt="Forest enclosed path with flowers"></a>
+				<a href="img/09.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/09.jpg" alt="Countryside Lane
+We enjoyed a quiet stroll down this countryside lane."></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/10.jpg" data-rel="lightcase"><img src="img/thumbnails/10.jpg" alt="Waves craashing on the beach with high hills"></a>
+				<a href="img/10.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/10.jpg" alt="Sunset at the coast! The sky turned a lovely shade of orange."></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/11.jpg" data-rel="lightcase"><img src="img/thumbnails/11.jpg" alt="Outlook from a cave at a muddy river winding through a forest and plain"></a>
+				<a href="img/11.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/11.jpg" alt="I did a tour of a cave today and the view of the landscape below was breathtaking.
+
+"></a>
 			</div>
 
 			<div class="thumb-div">
-				<a href="img/12.jpg" data-rel="lightcase"><img src="img/thumbnails/12.jpg" alt="Snow capped mountains seen from across a green field with lavender"></a>
+				<a href="img/12.jpg" data-rel="lightcase:myCollection:slideshow"><img src="img/thumbnails/12.jpg" alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a>
 			</div>
 
 
@@ -75,7 +84,12 @@ Hay Bales"></a>
 		<script src="js/lightcase/src/js/lightcase.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
-					$('a[data-rel^=lightcase]').lightcase();
+					$('a[data-rel^=lightcase]').lightcase({
+
+						slideshow: true,
+						navigateEndless: true
+
+					});
 			});
 		</script>
 		

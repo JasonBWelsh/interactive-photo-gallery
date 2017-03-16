@@ -37,7 +37,7 @@ input[type="text"] {
 	background-color: #eee;
 	color: #000;
 	outline: none;
-	border: 1px solid #000;
+	border: 1px solid #222;
 	/*border: none;*/
 	border-radius: 8px;
 	padding: 10px;
@@ -49,7 +49,7 @@ input[type="text"] {
 input[type="text"]:focus {
 	background-color: #323232;
 	color: #efefef;
-	border: 1px solid #fff;
+	/*border: 1px solid #fff;*/
 }
 
 /* Gallery */
@@ -64,30 +64,34 @@ input[type="text"]:focus {
 	max-width: 80%;
 	max-width: 400px;
 	margin: 10px auto;
+	border-radius: 8px;
 }
 
-.thumb-div:hover {
+/*.thumb-div:hover {
 	background-color: #373737;
 }
-
+*/
 .thumb-div img {
 	margin-bottom: 10%;
 	margin-top: 10%;
 	height: 80%;
 	width: 80%;
-	transition: border-color 0.5s, filter 1s;
-}
-
-
-.thumb-div,
-.thumb-div img {
-	border: 1px solid #aaa;
+	box-shadow: 3px 4px 5px #151515;
 	border-radius: 8px;
+	transition: border-color 0.5s, filter 1s, box-shadow 1s;
 }
+
+
+/*.thumb-div*/
+/*.thumb-div img*/ /*{*/
+	/*border: 1px solid #777;
+	border-radius: 8px;
+}*/
 
 .thumb-div img:hover {
-	border-color: #fff;
-	filter: brightness(1.15);
+	border-color: #222;
+	box-shadow: 3px 4px 3px #222;
+	filter: brightness(1.2);
 }
 
 /* Media Queries */ 
