@@ -41,7 +41,6 @@ input[type="text"] {
 	color: #b1b9c1;
 	outline: none;
 	border: 1px solid #222;
-	/*border: none;*/
 	border-radius: 8px;
 	padding: 10px;
 	width: 80%;
@@ -70,18 +69,19 @@ input[type="text"]:focus {
 }
 
 
-.thumb-div img {
+.image {
 	margin-bottom: 10%;
 	margin-top: 10%;
 	height: 80%;
 	width: 80%;
 	box-shadow: 2px 2px 5px #151515;
+	border: 10px solid #191919;
 	border-radius: 8px;
 	transition: border-color 0.5s, filter 1s, box-shadow 1s;
 }
 
 
-.thumb-div img:hover {
+.image:hover {
 	border-color: #222;
 	filter: brightness(1.2);
 }
@@ -121,9 +121,9 @@ input[type="text"]:focus {
 
 	.thumb-div {
 		width: 23%;
-		/*border: none;*/
-	}	
-
+		
+	}
+	
 
 }
 
