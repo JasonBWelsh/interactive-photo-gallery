@@ -60,19 +60,19 @@ input[type="text"]:focus {
 }
 
 .thumb-div {
-	/*background-color: #191919;*/
-	/*width: 80%;*/
-	/*max-width: 80%;*/
-	/*max-width: 400px;*/
+	/*background-color: #191919;
+	width: 80%;
+	max-width: 80%;
+	max-width: 400px;*/
 	margin: 10px auto;
-	border-radius: 8px;
+	/*border-radius: 8px;*/
 }
 
 
 .image {
 	margin: 0 auto;
-	/*margin-bottom: 10%;
-	margin-top: 10%;*/
+	margin-bottom: 10%;
+	margin-top: 10%;
 	height: 80%;
 	width: 80%;
 	box-shadow: 2px 2px 5px #151515;
