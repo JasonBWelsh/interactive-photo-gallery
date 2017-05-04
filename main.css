@@ -27,7 +27,6 @@ ul, ol, li {
 /* Search */
 
 .search-wrap {
-	/*margin-top: 35px;*/
 	margin-bottom: 25px;
 	text-align: center;
 	width: 100%;
@@ -37,7 +36,7 @@ ul, ol, li {
 }
 
 input[type="text"] {
-	background-color: #323232;/*#eee;*/
+	background-color: #323232;
 	color: #b1b9c1;
 	outline: none;
 	border: 1px solid #222;
@@ -60,12 +59,7 @@ input[type="text"]:focus {
 }
 
 .thumb-div {
-	/*background-color: #191919;
-	width: 80%;
-	max-width: 80%;
-	max-width: 400px;*/
 	margin: 10px auto;
-	/*border-radius: 8px;*/
 }
 
 
@@ -129,4 +123,3 @@ input[type="text"]:focus {
 }
 
 /***** Lightcase CSS *****/
-
